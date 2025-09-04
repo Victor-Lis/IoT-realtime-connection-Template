@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Configuração Salva</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: oklch(0.147 0.004 49.25);
+        color: white;
+        text-align: center;
+      }
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+        background: #2e2e2e;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: oklch(0.795 0.184 86.047);
+      }
+      p {
+        font-size: 24px;
+        color: white;
+      }
+      .countdown {
+        font-size: 30px;
+        font-weight: bold;
+        color: oklch(0.795 0.184 86.047);
+      }
+    </style>
+    <!-- <meta http-equiv="refresh" content="5;url=/" /> -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>Configuração Salva!</h1>
+      <p>
+        O dispositivo será reiniciado em
+        <span id="countdown" class="countdown">5</span> segundos...
+      </p>
+      <span>Você já pode fechar esta página</span>
+    </div>
+
+    <script>
+      let countdownValue = 5; // Iniciar contagem a partir de 5 segundos
+      const countdownElement = document.getElementById("countdown");
+
+      function updateCountdown() {
+        if (countdownValue > 0) {
+          countdownValue--;
+          countdownElement.textContent = countdownValue;
+        }
+      }
+
+      // Atualizar a contagem a cada segundo
+      setInterval(updateCountdown, 1000);
+    </script>
+  </body>
+</html>
