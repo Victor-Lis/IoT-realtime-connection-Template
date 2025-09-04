@@ -37,7 +37,12 @@ export default function ToggleLed() {
 
       <button
         onClick={handleToggleLed}
-        className={`p-1 bg-white rounded-full cursor-pointer hover:opacity-80 hover:scale-105 transition-transform duration-200`}
+        disabled={!deviceCode}
+        className={`p-1 bg-white rounded-full transition-transform duration-200 ${
+          !deviceCode
+            ? "opacity-50 cursor-not-allowed"
+            : "hover:opacity-80 hover:scale-105 cursor-pointer"
+        }`}
       >
         <PowerIcon
           size={32}
