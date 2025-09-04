@@ -100,7 +100,7 @@ Siga os passos abaixo para colocar o projeto a funcionar.
   #define AP_PASSWORD "12345678"
 
   // Credenciais do seu Broker MQTT
-  #define MQTT_SERVER "seu-broker.com"
+  #define MQTT_SERVER "seu-broker.com" // somente o IP
   #define MQTT_PORT 1883
   #define MQTT_USER "seu_usuario"
   #define MQTT_PASSWORD "sua_senha"
@@ -139,7 +139,7 @@ Siga os passos abaixo para colocar o projeto a funcionar.
   ```env
   # IoT-realtime-connection-Template/nextjs/.env.local
 
-  NEXT_PUBLIC_MQTT_SERVER="seu-broker.com" // somente o IP
+  NEXT_PUBLIC_MQTT_SERVER="seu-broker.com" # somente o IP
   NEXT_PUBLIC_MQTT_PORT=1883
   NEXT_PUBLIC_MQTT_USER="seu_usuario"
   NEXT_PUBLIC_MQTT_PASSWORD="sua_senha"
