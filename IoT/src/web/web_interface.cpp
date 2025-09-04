@@ -115,7 +115,7 @@ void handleRoot()
     "<label for='code'>Código de acesso:</label>"
     "<input type='text' id='code' name='code' value='' required />"
     "<label for='ledPin'>Pino do Led:</label>"
-    "<input type='number' id='ledPin' name='ledPin' min='1' max='10' required />"
+    "<input type='number' id='ledPin' name='ledPin' required />"
     "<button type='submit'>Salvar e Reiniciar</button>"
     "</form>"
     "</div>"
