@@ -53,7 +53,5 @@ void loadConfiguration();
 void saveConfiguration();
 void setupHardware();
 void resetConfiguration();
-void resetLastGateState(int i);
-bool hasGateTimeoutElapsed(int i);
 
 #endif
